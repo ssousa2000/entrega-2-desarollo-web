@@ -525,6 +525,7 @@ height: 25% ;
  
   }.fotoshapes img {
     width: 20%;
+    height: auto;
   }
 
  
