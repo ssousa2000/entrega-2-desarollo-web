@@ -212,10 +212,6 @@ footer form button a {
   justify-content: space-around;
   gap: 20px;
 }
-.linksinicio img {
-  width: 300px;
-  border: 2px black solid;
-}
 .linksinicio a {
   padding: 5px;
   font-weight: bold;
@@ -465,6 +461,16 @@ footer form button a {
     margin-top: 10px;
     width: 100%;
   }
+
+  .fotosinicio img {
+    width: 30%;
+  }
+ .mainiframe{
+  width: 70% ;
+height: 25% ;
+ }
+
+
 }
 @media (max-width: 480px) {
   .footerlinks {
@@ -491,4 +497,17 @@ footer form button a {
     width: 100%;
     font-size: 14px; 
   }
+  .fotosinicio {
+    margin: 10px;
+    padding: 10px;
+   gap: 40px;
+  }
+  .fotosinicio img {
+    width: 25%;
+  }
+  .mainiframe{
+    width: 70% ;
+ 
+  }
+ 
 }
