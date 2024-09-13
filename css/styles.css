@@ -380,7 +380,14 @@ footer form button a {
   gap: 15px;
   font-size: small;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: ;
+  gap: 20px; 
+  text-align: center;
 }
+
+
 .mainshapes img {
   width: 150px;
   height: 300px;
@@ -469,7 +476,15 @@ footer form button a {
   width: 70% ;
 height: 25% ;
  }
+ .mainshapes {
+  grid-template-columns: 1fr;
+}
 
+.fotoshapes {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
 }
 @media (max-width: 480px) {
@@ -508,6 +523,9 @@ height: 25% ;
   .mainiframe{
     width: 70% ;
  
+  }.fotoshapes img {
+    width: 20%;
   }
+
  
 }
