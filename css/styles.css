@@ -41,13 +41,25 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
 .navbar {
-  background-color: white;
+  background-color: grey;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
 }
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  width: auto; 
+}
+
 .navbar .navbar-nav .nav-link {
   background-color: white;
   color: black;
@@ -55,16 +67,10 @@ h1 {
   border: black solid 1.5px;
   border-radius: 10px;
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px;
   text-align: center;
-  width: 100%;
 }
-.navbar .navbar-nav .nav-link .active {
-  background-color: transparent;
-  color: black;
-  border: none;
-  font-weight: bold;
-}
+
 .navbar .navbar-nav .nav-link:hover {
   background-color: black;
   color: white;
@@ -75,6 +81,8 @@ h1 {
 .navbar-brand {
   font-weight: bold;
   color: black;
+  text-align: center;
+  width: auto;
 }
 
 .navbar-toggler {
@@ -85,28 +93,21 @@ h1 {
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
-.navbar .navbar-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.navbar .navbar-nav .nav-link:hover {
-  background-color: black;
-  color: white;
-  border: black double 2px;
-  border-radius: 10px;
-}
 .navbar-nav .nav-item {
-  width: 100%;
+  width: auto; 
+  display: flex;
+  justify-content: center;
   display: flex;
   justify-content: center;
 }
+
 .navbar-nav .nav-item .nav-link {
   flex-grow: 1;
   display: block;
   text-align: center;
   padding: 15px;
 }
+
 .navbar-nav .active {
   font-weight: bold;
   background-color: lightgray;
@@ -420,6 +421,28 @@ footer form button a {
   width: 100px;
 }
 @media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%; 
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%; 
+  }
+  .navbar-brand {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .footerlinks {
     flex-direction: column;
     justify-content: center;
