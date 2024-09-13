@@ -382,7 +382,6 @@ footer form button a {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: ;
   gap: 20px; 
   text-align: center;
 }
