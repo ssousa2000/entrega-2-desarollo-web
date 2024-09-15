@@ -57,7 +57,7 @@ h1 {
 .navbar .navbar-nav {
   display: flex;
   flex-direction: row;
-  width: auto; 
+  width: auto;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -94,7 +94,7 @@ h1 {
 }
 
 .navbar-nav .nav-item {
-  width: auto; 
+  width: auto;
   display: flex;
   justify-content: center;
   display: flex;
@@ -382,10 +382,9 @@ footer form button a {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px; 
+  gap: 20px;
   text-align: center;
 }
-
 
 .mainshapes img {
   width: 150px;
@@ -422,24 +421,57 @@ footer form button a {
   border-radius: 15px;
   width: 100px;
 }
+.tosparagraph {
+  background-color: rgb(242, 234, 234);
+  border: black solid 3px;
+  margin: 10px;
+  padding: 10px;
+}
+.pparagraph {
+  background-color: rgb(242, 234, 234);
+  border: black solid 3px;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  width: 80vw;
+}
+.auparagraph{
+  background-color: rgb(242, 234, 234);
+  border: black solid 3px;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  width: 80vw;
+
+}
+.fotoaboutus img{
+  height: auto;
+  width: 70vw;
+  align-content: center;
+  border: black solid 2px;
+}
+.mainaboutus{
+  background-color: rgb(242, 234, 234);
+
+}
 @media (max-width: 768px) {
   .navbar-nav {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
   .navbar-nav .nav-item {
-    width: 100%; 
+    width: 100%;
   }
 
   .navbar-nav .nav-link {
-    width: 100%; 
+    width: 100%;
   }
   .navbar-brand {
     text-align: center;
     width: 100%;
   }
-  
+
   .navbar-nav .nav-item {
     width: 100%;
     display: flex;
@@ -450,7 +482,7 @@ footer form button a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .footerlinks a {
     margin: 10px 0;
     padding: 10px;
@@ -471,20 +503,19 @@ footer form button a {
   .fotosinicio img {
     width: 30%;
   }
- .mainiframe{
-  width: 70% ;
-height: 25% ;
- }
- .mainshapes {
-  grid-template-columns: 1fr;
-}
+  .mainiframe {
+    width: 70%;
+    height: 25%;
+  }
+  .mainshapes {
+    grid-template-columns: 1fr;
+  }
 
-.fotoshapes {
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
+  .fotoshapes {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 480px) {
   .footerlinks {
@@ -492,7 +523,7 @@ height: 25% ;
     justify-content: center;
     align-items: center;
   }
-  
+
   .footerlinks a {
     margin: 15px 0;
     padding: 12px;
@@ -509,23 +540,21 @@ height: 25% ;
   footer form button {
     margin-top: 10px;
     width: 100%;
-    font-size: 14px; 
+    font-size: 14px;
   }
   .fotosinicio {
     margin: 10px;
     padding: 10px;
-   gap: 40px;
+    gap: 40px;
   }
   .fotosinicio img {
     width: 25%;
   }
-  .mainiframe{
-    width: 70% ;
- 
-  }.fotoshapes img {
+  .mainiframe {
+    width: 70%;
+  }
+  .fotoshapes img {
     width: 20%;
     height: auto;
   }
-
- 
 }
