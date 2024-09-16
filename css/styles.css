@@ -454,6 +454,18 @@ footer form button a {
   background-color: rgb(242, 234, 234);
 
 }
+.boton{
+  margin: 10px;
+  padding: 10px;
+}
+.customform p{
+  margin: 10px;
+  padding: 10px;
+}
+.customform form{
+  margin: 20px;
+  padding: 10px;
+}
 @media (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
@@ -516,6 +528,20 @@ footer form button a {
     justify-content: center;
     margin-bottom: 20px;
   }
+  .fotostienda {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  .fotostienda img {
+    width: 200px;
+    height: auto;
+    border: 2px black solid;
+  }
 }
 @media (max-width: 480px) {
   .footerlinks {
@@ -556,5 +582,14 @@ footer form button a {
   .fotoshapes img {
     width: 20%;
     height: auto;
+  }
+  .fotostienda {
+   
+    gap: 20px;
+  }
+  .fotostienda img {
+    width: 180px;
+    height: auto;
+    border: 2px black solid;
   }
 }
