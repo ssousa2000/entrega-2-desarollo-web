@@ -24,3 +24,30 @@
   .asidecustom {
     grid-area: 2 / 1 / 6 / 3;
   }
+  .customform{
+    background-color: black;
+    color: rgb(220, 215, 215);
+    p{
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: larger;
+      font-style: italic;
+      text-align: left;
+    }
+    h2{
+      border: black solid 1.5px;
+      width: 25%;
+      text-align: center;
+    }
+    label{
+      font-weight: bold;
+    }
+  }
+  .boarddescription{
+    p{
+      text-decoration: none;
+      font-weight: normal;
+      font-size: normal;
+      font-style: normal;
+    }
+  }

@@ -70,8 +70,8 @@ ul li a {
 .formcontacto input {
   margin: 5px;
   padding: 5px;
-  background-color: black;
-  color: grey;
+  background-color: rgb(223, 213, 213);
+  color: black;
 }
 
 .container {
@@ -100,6 +100,33 @@ ul li a {
 
 .asidecustom {
   grid-area: 2/1/6/3;
+}
+
+.customform {
+  background-color: black;
+  color: rgb(220, 215, 215);
+}
+.customform p {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+  text-align: left;
+}
+.customform h2 {
+  border: black solid 1.5px;
+  width: 25%;
+  text-align: center;
+}
+.customform label {
+  font-weight: bold;
+}
+
+.boarddescription p {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: normal;
+  font-style: normal;
 }
 
 footer {
@@ -188,11 +215,20 @@ h1 {
   align-content: center;
   text-decoration: underline;
 }
+.maininicio .subtitulo {
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+}
 .maininicio h2 {
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  font-weight: lighter;
+  text-decoration: underline;
 }
 
 .fotosinicio {
