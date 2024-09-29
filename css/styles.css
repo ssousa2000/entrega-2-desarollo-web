@@ -204,57 +204,40 @@ h1 {
   justify-content: space-around;
   gap: 60px;
 }
-.fotosinicio img {
-  width: 300px;
-  border: 2px black solid;
-}
 .fotosinicio a {
   color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
-  border: black solid 1px;
 }
-
-.linksinicio {
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: space-around;
-  gap: 20px;
-}
-.linksinicio a {
-  padding: 5px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  border: black solid 1px;
-}
-.linksinicio a:hover {
+.fotosinicio a img {
+  width: 100%;
+  height: 100%;
+  border: 2px black solid;
   background-color: black;
-  color: gray;
-  border: black double 2px;
-  border-radius: 10px;
+  transition: all 0.3s;
+}
+.fotosinicio a img:hover {
+  background-color: black;
+  border: rgb(196, 185, 185) solid 4px;
+  border-radius: 20px;
+  transform: scale(1.05, 1.1);
 }
 
 .navbar {
   background-color: grey;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
 }
 .navbar .navbar-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: auto;
+  width: 100%;
 }
 .navbar .navbar-nav .nav-link {
   background-color: white;
@@ -265,18 +248,21 @@ h1 {
   padding: 10px;
   margin: 5px;
   text-align: center;
+  transition: all 0.2s;
 }
 .navbar .navbar-nav .nav-link:hover {
+  margin: 15px;
   background-color: black;
   color: white;
-  border: black double 2px;
+  border: black 2px;
   border-radius: 10px;
+  transform: scale(1.2, 1.1);
+  gap: 20px;
 }
 .navbar .navbar-nav .nav-item {
-  width: auto;
+  width: 15%;
   display: flex;
-  justify-content: center;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .navbar .navbar-nav .nav-item .nav-link {
@@ -287,7 +273,7 @@ h1 {
 }
 .navbar .navbar-nav .active {
   font-weight: bold;
-  background-color: lightgray;
+  background-color: rgb(11, 8, 8);
 }
 
 .navbar-brand {
@@ -384,6 +370,11 @@ h1 {
   flex-direction: column;
   gap: 10px;
 }
+.fotoshapes img {
+  border: solid black 2px;
+  border-radius: 15px;
+  width: 100px;
+}
 .fotoshapes a {
   display: block;
   margin-top: 5px;
@@ -391,24 +382,24 @@ h1 {
   color: black;
   text-decoration: underline;
   font-weight: bold;
+  transition: all 0.3s;
 }
 .fotoshapes a:hover {
   background-color: black;
   color: gray;
   border: double 3px black;
-  border-radius: 15px;
   text-decoration: none;
-}
-.fotoshapes img {
-  border: solid black 2px;
-  border-radius: 15px;
-  width: 100px;
+  border-radius: 5px;
 }
 
 .mainteamriders {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: grey;
+  background-image: linear-gradient(to bottom, grey, #f1eaea);
+}
+.mainteamriders h1 {
   background-color: grey;
 }
 
@@ -452,6 +443,7 @@ h1 {
   font-weight: bold;
   display: flex;
   justify-content: space-around;
+  transition: all 0.2s;
 }
 .fotostienda a:hover {
   background-color: black;
@@ -461,6 +453,7 @@ h1 {
 .fotostienda img {
   width: 300px;
   border: 2px black solid;
+  transition: all 0.2s;
 }
 .fotostienda img:hover {
   border-radius: 30px;
@@ -494,16 +487,23 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .navbar-nav {
+  .navbar {
     flex-direction: column;
     align-items: center;
-  }
-  .navbar-nav .nav-item {
-    width: 100%;
-    display: flex;
     justify-content: center;
   }
-  .navbar-nav .nav-link {
+  .navbar .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .navbar-nav .nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar .navbar-nav .nav-link {
     width: 100%;
   }
   .navbar-brand {
@@ -563,6 +563,10 @@ h1 {
     width: 60%;
     height: 50%;
   }
+  .fotosinicio {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 @media (max-width: 480px) {
   .footerlinks {
@@ -586,14 +590,6 @@ h1 {
     width: 100%;
     font-size: 14px;
   }
-  .fotosinicio {
-    margin: 10px;
-    padding: 10px;
-    gap: 40px;
-  }
-  .fotosinicio img {
-    width: 25%;
-  }
   .mainiframe {
     width: 70%;
   }
@@ -612,6 +608,10 @@ h1 {
   .fotosteamriders img {
     width: 55%;
     height: 70%;
+  }
+  .fotosinicio {
+    flex-direction: column;
+    gap: 40px;
   }
 }
 

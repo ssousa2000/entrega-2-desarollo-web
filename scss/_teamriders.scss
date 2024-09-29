@@ -3,6 +3,10 @@
     flex-direction: row;
     align-items: center;
     background-color: grey;
+    background-image: linear-gradient(to bottom, grey,#f1eaea);
+    h1{
+    background-color: grey;
+    }
   }
   .fotosteamriders {
     display: flex;
