@@ -12,6 +12,7 @@
         font-weight: bold;
         display: flex;
         justify-content: space-around;
+        transition: all 0.5s;
         &:hover {
             background-color: black;
             border: black double 2px;
