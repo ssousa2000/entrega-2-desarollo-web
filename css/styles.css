@@ -321,6 +321,7 @@ h1 {
   color: black;
   text-align: center;
   width: auto;
+  margin-right: 0;
 }
 
 .navbar-toggler {
