@@ -3,6 +3,12 @@ $primary-color: black;
 $hover-background-color: gray;
 $margin-padding: 20px;
 
+.maintienda{
+  background-image: linear-gradient(to top, grey, #f1eaea);
+  h1{
+   background-color:#eae1e1 ; 
+  }
+}
 .fotostienda {
     margin: $margin-padding;
     padding: $margin-padding;

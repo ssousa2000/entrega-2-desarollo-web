@@ -1,3 +1,9 @@
+.maincustom{
+  background-image: linear-gradient(to top, grey, #f1eaea);
+  h1{
+    background-color: #eae1e1 ;
+  }
+}
 .container {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr repeat(2, 1fr);
@@ -25,14 +31,16 @@
     grid-area: 2 / 1 / 6 / 3;
   }
   .customform{
+    width: 100%;
     background-color: black;
     color: rgb(220, 215, 215);
+    text-align: center;
     p{
       text-decoration: underline;
       font-weight: bold;
       font-size: larger;
       font-style: italic;
-      text-align: left;
+      text-align: center;
     }
     h2{
       border: black solid 1.5px;

@@ -8,7 +8,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
   overflow: auto;
 }
 body main {
@@ -21,6 +22,7 @@ body main {
   padding: 10;
   background-color: white;
   color: black;
+  background-image: linear-gradient(to top grey, #f1eaea);
 }
 
 ul {
@@ -35,6 +37,10 @@ ul li a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-image: linear-gradient(to top, grey, #f1eaea);
+}
+.maincontacto h1 {
+  background-color: #eae1e1;
 }
 
 .contacto {
@@ -74,6 +80,13 @@ ul li a {
   color: black;
 }
 
+.maincustom {
+  background-image: linear-gradient(to top, grey, #f1eaea);
+}
+.maincustom h1 {
+  background-color: #eae1e1;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr repeat(2, 1fr);
@@ -103,15 +116,17 @@ ul li a {
 }
 
 .customform {
+  width: 100%;
   background-color: black;
   color: rgb(220, 215, 215);
+  text-align: center;
 }
 .customform p {
   text-decoration: underline;
   font-weight: bold;
   font-size: larger;
   font-style: italic;
-  text-align: left;
+  text-align: center;
 }
 .customform h2 {
   border: black solid 1.5px;
@@ -185,7 +200,7 @@ header {
   color: grey;
 }
 header a {
-  color: white;
+  color: #ebe8e8;
 }
 header ul {
   display: flex;
@@ -211,6 +226,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: white;
+  background-image: linear-gradient(to top, grey, #f1eaea);
 }
 .maininicio h1 {
   display: flex;
@@ -218,6 +234,7 @@ h1 {
   justify-content: center;
   align-content: center;
   text-decoration: underline;
+  background-color: #ebe8e8;
 }
 .maininicio .subtitulo {
   font-weight: bolder;
@@ -265,7 +282,7 @@ h1 {
 }
 
 .navbar {
-  background-color: grey;
+  background-color: #ebe8e8;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -394,6 +411,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
+  background-image: linear-gradient(to top, grey, #f1eaea);
 }
 .mainshapes img {
   width: 150px;
@@ -438,10 +456,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   background-color: grey;
-  background-image: linear-gradient(to bottom, grey, #f1eaea);
+  background-image: linear-gradient(to top, grey, #f1eaea);
 }
 .mainteamriders h1 {
-  background-color: grey;
+  background-color: #ebe8e8;
 }
 
 .fotosteamriders {
@@ -467,6 +485,13 @@ h1 {
 
 .linkteamriders a {
   color: black;
+}
+
+.maintienda {
+  background-image: linear-gradient(to top, grey, #f1eaea);
+}
+.maintienda h1 {
+  background-color: #eae1e1;
 }
 
 .fotostienda {
